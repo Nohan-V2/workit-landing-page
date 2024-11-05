@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    color: var(--white);
 }
 
 p,
@@ -27,39 +28,105 @@ h2 {
 }
 
 body {
-    background-color: var(--grey);
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-header {
+.top-main {
+    background-color: var(--black);
+    width: 100%;
     display: flex;
-    padding-top: 56px;
-    width: 1120px;
-}
-
-header img {
-    width: 94px;
-}
-
-header a {
-    margin-left: auto;
-}
-
-.top-hero {
-    width: 634px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.top-hero h1 {
+.nav {
+    background-color: var(--black);
+    text-align: center;
+    display: flex;
+    padding: 56px 80px;
+    width: 80%;
+}
+
+.nav img {
+    width: 95.76px;
+    height: 24.61px;
+}
+
+.nav a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+    text-decoration: 3px underline var(--accent-color);
+    margin-left: auto;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: center;
+    padding: 56px 80px 296px 80px;
+    margin: 0px auto;
+}
+
+.hero-text h1 {
     font-weight: 500px;
     font-size: 80px;
     line-height: 100%;
     letter-spacing: 0px;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 
-.top-hero h1 span {
-    text-decoration: underline var(--accent-color);
+.hero-text h1 span {
+    text-decoration: 3px underline var(--accent-color);
+}
+
+.hero-text a {
+    text-decoration: none;
+    padding: 12px 32px;
+    color: var(--black);
+    background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
+
+.phone {
+    width: 768px;
+    margin-top: -280px;
+}
+
+footer {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 112px 80px;
+}
+
+.logo-footer img {
+    width: 95.76px;
+    height: 24.61px;
+    margin-bottom: 56px;
+}
+
+.list-social a {
+    margin-right: 28px;
+}
+
+.list-social img {
+    width: 20px;
+    height: 20px;
+}
+
+.list-social a:last-child {
+    margin-right: 0px;
 }
