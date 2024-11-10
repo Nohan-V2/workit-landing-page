@@ -38,12 +38,24 @@ main {
     width: 100%;
 }
 
+.top-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-main {
+    width: 100%;
+    background-color: var(--black);
+}
+
 .nav {
     background-color: var(--black);
     text-align: center;
     display: flex;
     padding: 56px 80px;
-    width: 80%;
 }
 
 .nav img {
@@ -61,19 +73,10 @@ main {
     margin-left: auto;
 }
 
-.top-main {
-    background-color: var(--black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .hero-text {
-    width: 70%;
+    width: 50%;
     text-align: center;
-    padding: 56px 80px 384px 80px;
+    padding: 56px 80px 296px 80px;
     margin: 0px auto;
 }
 
@@ -102,9 +105,71 @@ main {
     letter-spacing: 0px;
 }
 
+.container-phone {
+    width: 100%;
+    background-color: var(--grey);
+}
+
 .phone {
     width: 768px;
     margin-top: -280px;
+}
+
+.top-page .ornamental {
+    margin-top: 0px;
+    background-color: var(--black);
+    width: 100%;
+}
+
+.mid-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mid-main {
+    padding: 88px 80px 144px 80px;
+    display: flex;
+    width: 100%;
+    background-color: var(--grey);
+    gap: 32px;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.value * {
+    color: var(--black);
+}
+
+.mid-page .ornamental {
+    margin-top: 0px;
+    background-color: var(--grey);
+    width: 100%;
+}
+
+.value h2:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 24px;
+    width: 56px;
+    height: 56px;
+    border: 1px var(--black) solid;
+    border-radius: 50%;
+    margin-bottom: 56px;
+}
+
+.value h2:nth-child(2) {
+    margin-bottom: 28px;
 }
 
 footer {
@@ -126,6 +191,8 @@ footer {
 .list-social a {
     margin-right: 28px;
 }
+
+.list-social a:hover img {}
 
 .list-social img {
     width: 20px;
