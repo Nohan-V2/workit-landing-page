@@ -19,6 +19,13 @@ h2 {
     font-family: "Fraunces", serif;
 }
 
+.cta-content a:hover,
+.hero-text a:hover {
+    background-color: transparent;
+    border: 1px var(--accent-color) solid;
+    color: var(--accent-color);
+}
+
 :root {
     --white: #FFFFFF;
     --black: #24053E;
@@ -55,7 +62,7 @@ main {
     background-color: var(--black);
     text-align: center;
     display: flex;
-    padding: 56px 80px;
+    padding: 56px 80px 0px 80px;
 }
 
 .nav img {
@@ -71,6 +78,28 @@ main {
     letter-spacing: 0px;
     text-decoration: 3px underline var(--accent-color);
     margin-left: auto;
+    transition: all ease 0.3s;
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero .object1 {
+    position: absolute;
+    top: 48px;
+    left: 0px;
+}
+
+.hero .object2 {
+    position: absolute;
+    top: 252px;
+    right: 0px;
 }
 
 .hero-text {
@@ -81,7 +110,7 @@ main {
 }
 
 .hero-text h1 {
-    font-weight: 500px;
+    font-weight: 400px;
     font-size: 80px;
     line-height: 100%;
     letter-spacing: 0px;
@@ -95,6 +124,7 @@ main {
 }
 
 .hero-text a {
+    border: 1px transparent solid;
     text-decoration: none;
     padding: 12px 32px;
     color: var(--black);
@@ -103,6 +133,7 @@ main {
     font-size: 18px;
     line-height: 180%;
     letter-spacing: 0px;
+    transition: all ease 0.3s;
 }
 
 .container-phone {
@@ -132,6 +163,9 @@ main {
 .mid-main {
     padding: 88px 80px 144px 80px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     background-color: var(--grey);
     gap: 32px;
@@ -143,6 +177,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 352px;
 }
 
 .value * {
@@ -155,7 +190,7 @@ main {
     width: 100%;
 }
 
-.value h2:first-child {
+.number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,13 +198,104 @@ main {
     padding: 8px 24px;
     width: 56px;
     height: 56px;
-    border: 1px var(--black) solid;
+    border: 1px var(--social) solid;
     border-radius: 50%;
     margin-bottom: 56px;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0px;
 }
 
-.value h2:nth-child(2) {
+.value-text h2 {
     margin-bottom: 28px;
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+.value-text p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
+
+.bottom-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 112px 80px 0px 80px;
+}
+
+.cta {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.cta-profil {
+    width: 100%;
+    margin-bottom: 102px;
+    margin-right: -88px;
+}
+
+.cta-profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-content {
+    position: relative;
+    padding: 64px;
+    margin-top: 168px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cta-content h2 {
+    font-weight: 400px;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+.cta-content p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
+
+.cta-content a {
+    text-decoration: none;
+    padding: 12px 32px;
+    color: var(--black);
+    border: 1px transparent solid;
+    background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.cta-content .object3 {
+    position: absolute;
+    bottom: -64px;
+    right: 108px;
 }
 
 footer {
@@ -188,17 +314,121 @@ footer {
     margin-bottom: 56px;
 }
 
-.list-social a {
-    margin-right: 28px;
+.list-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 28px;
 }
 
-.list-social a:hover img {}
+.list-social a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
 
 .list-social img {
-    width: 20px;
+    width: 100%;
     object-fit: cover;
 }
 
-.list-social a:last-child {
-    margin-right: 0px;
+.social {
+    position: relative;
+}
+
+.logo-hover {
+    opacity: 0%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transition: all ease 0.3s;
+}
+
+.logo-hover:hover {
+    opacity: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        padding: 32px 44px 0px 44px;
+    }
+
+    .hero-text {
+        width: 80%;
+        padding: 56px 44px 144px 44px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .phone {
+        margin-top: -120px;
+        width: 602px;
+        padding: 0px 44px;
+    }
+
+    .mid-main {
+        padding: 56px 44px 44px 44px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .number {
+        margin-bottom: 0px;
+        margin-right: 56px;
+        font-size: 20px;
+    }
+
+    .value-text h2 {
+        font-size: 28px;
+    }
+
+    .value-text p {
+        font-size: 16px;
+    }
+
+    .bottom-main {
+        padding: 112px 44px 0px 44px;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta-profil {
+        padding-bottom: 178px;
+        margin-right: -80px;
+    }
+
+    .cta-content {
+        padding: 48px;
+    }
+
+    .cta-content h2 {
+        font-size: 48px;
+    }
+
+    .cta-content p {
+        font-size: 16px;
+    }
+
+    .cta-content a {
+        width: 50%;
+    }
+
+    footer {
+        padding: 80px;
+    }
 }
