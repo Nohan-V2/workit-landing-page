@@ -400,7 +400,90 @@ footer {
     }
 
     .bottom-main {
-        padding: 112px 44px 0px 44px;
+        padding: 60px 44px 0px 44px;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta-profil {
+        padding-bottom: 178px;
+        margin-right: -80px;
+    }
+
+    .cta-content {
+        padding: 48px;
+    }
+
+    .cta-content h2 {
+        font-size: 48px;
+    }
+
+    .cta-content p {
+        font-size: 16px;
+    }
+
+    .cta-content a {
+        width: 50%;
+    }
+
+    footer {
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .nav {
+        padding: 32px 44px 0px 44px;
+    }
+
+    .hero-text {
+        width: 80%;
+        padding: 56px 44px 144px 44px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .phone {
+        margin-top: -120px;
+        width: 602px;
+        padding: 0px 44px;
+    }
+
+    .mid-main {
+        padding: 56px 44px 44px 44px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .number {
+        margin-bottom: 0px;
+        margin-right: 56px;
+        font-size: 20px;
+    }
+
+    .value-text h2 {
+        font-size: 28px;
+    }
+
+    .value-text p {
+        font-size: 16px;
+    }
+
+    .bottom-main {
+        padding: 60px 44px 0px 44px;
     }
 
     .cta {
