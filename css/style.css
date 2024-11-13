@@ -251,6 +251,8 @@ main {
 
 .cta-content {
     position: relative;
+    top: 0px;
+    left: -80px;
     padding: 64px;
     margin-top: 168px;
     background-color: var(--black);
